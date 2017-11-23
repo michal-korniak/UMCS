@@ -1,0 +1,10 @@
+#!/bin/bash
+awk 'BEGIN { max=-1; maxLineNumber=-1;}
+{
+	if(length($0)>max)
+	{
+		max=length($0);
+		maxLineNumber=NR
+	}
+}
+END {print maxLineNumber}' $1

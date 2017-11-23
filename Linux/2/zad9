@@ -1,0 +1,3 @@
+#!/bin/bash
+sed '/^M/d' $1
+

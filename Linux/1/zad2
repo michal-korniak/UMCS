@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Podaj imie: "
+read imie
+echo "Podaj nazwisko: "
+read nazwisko
+echo "Podaj PESEL: "
+read pesel
+
+echo "Witaj ${imie} ${nazwisko}, twoj pesel to ${pesel}."

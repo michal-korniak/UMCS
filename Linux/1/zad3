@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for (( i=1; $i <= 2; i++ )) ; do
+	echo "Podaj haslo: "
+       	read pass;
+	if [ $pass = "secret" ]
+		then ls -l ../
+		break
+	fi
+done

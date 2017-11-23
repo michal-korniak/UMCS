@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  buildertest:
+    image: buildertest
+    build:
+      context: .\BuilderTest
+      dockerfile: Dockerfile

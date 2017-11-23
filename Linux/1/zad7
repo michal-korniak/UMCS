@@ -1,0 +1,14 @@
+#!/bin/bash
+awk 'BEGIN { odczytajNastepny=1; }
+{
+	if(odczytajNastepny==1)
+	{
+		odczytajNastepny=0;
+		print $0;
+	}
+	else
+	{
+		odczytajNastepny=1;
+	}
+}' $1
+

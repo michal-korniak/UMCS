@@ -1,0 +1,5 @@
+#!/bin/bash
+awk '
+NR<7{
+print rand()*100;
+}' /etc/passwd

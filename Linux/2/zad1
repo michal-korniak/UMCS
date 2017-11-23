@@ -1,0 +1,2 @@
+#!/bin/bash
+awk 'NF>0' $1 > tmp && mv tmp $1
